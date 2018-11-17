@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      name: fang-config
+      profile: test
+      # uri: http://localhost:8002/
+      label: trunk
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config-server
+      fail-fast: true
+    bus:
+      trace:
+        enabled: true #开启消息跟踪

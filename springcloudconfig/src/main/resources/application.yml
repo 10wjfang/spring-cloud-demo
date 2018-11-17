@@ -1,0 +1,28 @@
+server:
+  port: 8002
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://1.2.1.1:8889/svn/398svn/config-repo
+          username: F
+          password: F
+        default-label: trunk
+    consul:
+      host: localhost
+      port: 8500
+  profiles:
+    active: subversion
+  application:
+    name: spring-cloud-config-server
+  rabbitmq:
+    host: 192.168.241.136
+    port: 5672
+    username: user
+    password: 123456
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

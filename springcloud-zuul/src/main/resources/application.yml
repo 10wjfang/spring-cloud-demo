@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuul-service
+server:
+  port: 8002
+zuul:
+  routes:
+    api-a:
+      serviceId: comsumer-service
+      path: /**

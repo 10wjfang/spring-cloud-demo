@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+  rabbitmq:
+    host: 192.168.241.136
+    port: 5672
+    username: user
+    password: 123456
+server:
+  port: 8003
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

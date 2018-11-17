@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: comsumer-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+server:
+  port: 8001
+feign:
+  hystrix:
+    enabled: true
