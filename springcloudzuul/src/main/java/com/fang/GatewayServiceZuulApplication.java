@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableZuulProxy
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 //@EnableFeignClients
 public class GatewayServiceZuulApplication {
     public static void main(String[] args) {
